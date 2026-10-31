@@ -1,0 +1,19 @@
+# Noah's Arch Agents
+
+> Nine deterministic MCP servers and REST APIs for AI agents (no LLM inside, no logging, official sources, pay per call). Base pattern: https://<host>.noahsarch.tech/mcp (Streamable HTTP) and https://<host>.noahsarch.tech/v1/tools/<tool> (REST, OpenAPI at /openapi.json). Header X-API-Key for paid tools; catalogue and free tools work without it.
+
+## Agents
+- [GCC e-Invoice Preflight Oracle](https://einvoice.noahsarch.tech/docs): validate UAE (PINT AE 1.0.3 Schematron, UBL 2.1, FTA checks) and Saudi (ZATCA, QR TLV) e-invoices; tools validate_invoice, readiness_report, extract_summary, list_rules, check_trn, zatca_qr_decode, zatca_qr_encode.
+- [GCC Sanctions & Terror-List Screener](https://screen.noahsarch.tech/docs): OFAC, UN, EU, UK, UAE Local Terrorist List; Arabic-aware matching; tools screen_name, screen_batch, audit_report, list_status, explain_match.
+- [ID & Format Oracle](https://idcheck.noahsarch.tech/docs): IBAN/BIC, VAT, national IDs, phones, postal codes, 240+ identifiers incl. Emirates ID, UAE TRN, Saudi ID.
+- [HR & Payroll Rules Oracle](https://hr.noahsarch.tech/docs): UAE and Saudi gratuity, leave, notice, overtime, sick pay, probation, wage breakdown with article citations.
+- [UAE Calendar Oracle](https://oracle.noahsarch.tech/docs): UAE working days, holidays with confirmation status, Hijri, Ramadan hours, deadlines.
+- [Business-Day Oracle](https://bizday.noahsarch.tech/docs): working days, ISDA conventions, deadlines for 250 countries and 30 markets.
+- [Email Verifier](https://verify.noahsarch.tech/docs): syntax, MX, disposable, role, typo fix, SMTP probe, SPF/DMARC.
+- [Website Contact & Social Extractor](https://contacts.noahsarch.tech/docs): emails, phones, WhatsApp, social profiles, addresses from a website.
+- [Text & Number Toolkit](https://textkit.noahsarch.tech/docs): amounts in words (Arabic cheque grammar), number formatting/parsing, Arabic normalisation, transliteration, date parsing incl. Hijri.
+
+## Also
+- Apify Store listings: https://apify.com/thenightowl
+- Keys and on-premises licences: contact@noahsarch.tech
+- Crawler policy: https://agents.noahsarch.tech/bot

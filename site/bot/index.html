@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NoahsArchContactBot — about this crawler</title>
+<style>body{margin:0;font:16px/1.55 system-ui,sans-serif;background:#fbfaf7;color:#1b1f23}@media(prefers-color-scheme:dark){body{background:#0f1115;color:#e8e6e1}a{color:#2dd4bf}}.wrap{max-width:760px;margin:0 auto;padding:48px 20px}code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px}</style></head>
+<body><div class="wrap">
+<h1>NoahsArchContactBot</h1>
+<p>User-agent: <code>Mozilla/5.0 (compatible; NoahsArchContactBot/1.0; +https://agents.noahsarch.tech/bot)</code></p>
+<p>This fetcher belongs to the <a href="/">Website Contact &amp; Social Extractor</a>. It only fetches a page when a customer explicitly asks for that website's published contact details — typically the homepage and its contact / about page, at most 20 pages per request, 2 MB each, with a 10-second timeout. It is not a crawler: it does not follow links beyond the site's own contact pages, does not index, does not run JavaScript, does not use proxies, and does not retry blocked requests.</p>
+<h2>It respects</h2>
+<ul><li><code>robots.txt</code> rules for <code>NoahsArchContactBot</code> and <code>*</code></li><li>HTTP 403/429 — reported to the customer, never circumvented</li><li>Private networks — it refuses to connect to non-public addresses</li></ul>
+<h2>To block it</h2>
+<pre><code>User-agent: NoahsArchContactBot
+Disallow: /</code></pre>
+<p>Questions or removal requests: <a href="mailto:contact@noahsarch.tech">contact@noahsarch.tech</a>.</p>
+</div></body></html>
